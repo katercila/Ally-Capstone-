@@ -1,0 +1,83 @@
+.info-container{
+    background-color: #50104A;
+}
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    padding: 50px;
+  }
+  
+  .info-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+  }
+  
+  .info-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+    color:  #fff;
+    padding: 30px;
+  }
+  
+  .info-text h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .info-text p {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .mission-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+    padding: 30px;
+  }
+
+  .mission-text h2 {
+    color: #50104A;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .quote-container h3 {
+    background-image: url("https://images.unsplash.com/photo-1598793923805-184b1adc10e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+    margin: 10px;
+    padding: 125px;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+  }
+
+  .group-members{
+    /* background-color:  #EAC9FF; */
+    margin: 3%;
+    padding: 3%;
+  }
+  .members-title h3{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #50104A;
+  }
+
+
