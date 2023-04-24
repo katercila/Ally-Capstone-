@@ -6,9 +6,11 @@ import {
   MDBCardBody,
   MDBCardTitle,
   MDBCardText,
+  MDBContainer,
   MDBRow,
   MDBCol
 } from 'mdb-react-ui-kit';
+import { BsHammer } from 'react-icons/bs';
 
 
 function About() {
@@ -43,8 +45,8 @@ function About() {
                 </p>
             </div>
             <div className="mission-video">
-              <video id="slider" width= "80%" autoPlay muted loop>
-                  <source src="/images/vol-1.mp4" type="video/mp4" />
+              <video id="slider" width= "85%" autoPlay muted loop>
+                  <source src="/images/about-helpingman.mp4" type="video/mp4" />
               </video>
             </div>
         </div>
@@ -55,15 +57,34 @@ function About() {
       </section>
 
       <section className="org-container">
-        <div className="org-header">
+        {/* <div className="org-header">
             <h3> Get Involved</h3>
         </div>
         <div className="orgs">
           <div className="org-text"> 
-
+            <img src="" alt="fan-icon"/> 
+            <h4>Renewable fuel and clean energy production</h4>
           </div>
-        </div>
-
+        </div> */}
+         <MDBContainer>
+      <MDBRow>
+        <MDBCol size='md'>
+          <BsHammer size={80} />
+          <h3> In-person volunteering</h3>
+          <p> This involves physically showing up at a location and performing tasks such as serving meals at a soup kitchen, cleaning up a park, or tutoring children. </p>
+        </MDBCol>
+        <MDBCol size='md'>
+          <BsHammer size={80} />
+          <h3> Environmental volunteering</h3>
+          <p> This involves volunteering with environmental organizations to protect the environment and promote sustainability, such as cleaning up beaches or planting trees. </p>
+        </MDBCol>
+        <MDBCol size='md'>
+          <BsHammer size={80} />
+          <h3> In-person volunteering</h3>
+          <p> This involves physically showing up at a location and performing tasks such as serving meals at a soup kitchen, cleaning up a park, or tutoring children. </p>
+        </MDBCol>
+      </MDBRow>
+      </MDBContainer>
       </section>
 
       <section className="group-members">

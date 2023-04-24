@@ -57,7 +57,7 @@
   }
 
   .quote-container h3 {
-    background-image: url("https://images.unsplash.com/photo-1598793923805-184b1adc10e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-image: url('/public/images/about-hands-purplebg.jpg');
     background-attachment: fixed;
     background-size: cover;
     height: 200px;
