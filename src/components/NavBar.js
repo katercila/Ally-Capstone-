@@ -28,21 +28,21 @@ function NavBar() {
           aria-label='Toggle navigation'
           onClick={() => setShowNavRight(!showNavRight)}
         >
-          <MDBIcon icon='bars' fas />
+          <MDBIcon className='nav-bars' icon='bars' fas />
         </MDBNavbarToggler>
 
         <MDBCollapse navbar show={showNavRight}>
           <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
             <MDBNavbarItem style={{padding:15, fontSize:18}}> 
-             <Link to="/">Home</Link>
+            <Link className="nav-items" to="/">Home</Link>
            
             </MDBNavbarItem>
-            <MDBNavbarItem className="home"  style={{padding:15, fontSize:18}}> 
-             <Link to="/about">About</Link>
+            <MDBNavbarItem   style={{padding:15, fontSize:18}}> 
+             <Link className="nav-items" to="/about">About</Link>
             </MDBNavbarItem>
 
             <MDBNavbarItem style={{padding:15, fontSize:18}}> 
-             <Link to="/signup">Sign Up</Link>
+            <Link className="nav-items" to="/signup">Sign Up</Link>
             </MDBNavbarItem>
             <MDBNavbarItem>
             </MDBNavbarItem>
