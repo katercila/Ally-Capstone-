@@ -1,0 +1,29 @@
+.volunteer-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .volunteer-item img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .volunteer-details h2 {
+    margin-top: 0;
+  }
+  
+  .volunteer-details p {
+    margin-bottom: 10px;
+  }
+  
+  .volunteer-details button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
