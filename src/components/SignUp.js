@@ -14,14 +14,19 @@ import {
   MDBCheckbox
 }
 from 'mdb-react-ui-kit';
+import { dblClick } from '@testing-library/user-event/dist/click';
 
 
 function SignUp() {
 
-  const [userLogin, setUserLogin] = useState({ username: '', password: '' });
-  const [justifyActive, setJustifyActive] = useState('tab1');;
-  // const [email, setEmail] = useState('');
-  // const [password, setPassword] = useState('');
+  const [user, setUser] = useState({ name: '', username: '', password: '', email: '' });
+  const [userLogin, setUserLogin] = useState("");
+  const [justifyActive, setJustifyActive] = useState('tab2' && 'tab1');;
+
+  function handleLogin(e) {
+    e.preventDefault();
+    console.log("User login:", userLogin);
+  }
 
   const handleJustifyClick = (value) => {
     if (value === justifyActive) {
@@ -31,18 +36,28 @@ function SignUp() {
     setJustifyActive(value);
   };
 
- const handleSubmit = (event) => {
-  event.preventDefault();
-  axios.post('http://localhost:3000/login', userLogin)
-    .then((response) => {
-      console.log(response.data);
-      // do something with the response, such as redirect to another page
-    })
-    .catch((error) => {
+  const handleSubmit = async (event, db) => {
+    event.preventDefault();
+    
+    try {
+      const existingUser = await db.query('SELECT * FROM users WHERE email = ?', [user.email]);
+    
+      if (existingUser.length > 0) {
+        console.log('Email already exists');
+  
+        return;
+      } else {
+        const result = await db.query('INSERT INTO users (username, email, password) VALUES (?,?,?)', [user.username, user.email, user.password]);
+      
+      }
+    
+      const registerResponse = await axios.post('http://localhost:3000/register', user);
+      console.log(registerResponse.data);
+    } catch (error) {
       console.log(error);
       // handle the error
-    });
-};
+    }
+  };
 
 
 
@@ -157,16 +172,52 @@ function SignUp() {
             <p className="text-center mt-3">or:</p>
           </div>
 
-          <MDBInput wrapperClass='mb-4' label='Name' id='form1' type='text'/>
+          {/* <MDBInput wrapperClass='mb-4' label='Name' id='form1' type='text'/>
           <MDBInput wrapperClass='mb-4' label='Username' id='form1' type='text'/>
           <MDBInput wrapperClass='mb-4' label='Email' id='form1' type='email'/>
-          <MDBInput wrapperClass='mb-4' label='Password' id='form1' type='password'/>
+          <MDBInput wrapperClass='mb-4' label='Password' id='form1' type='password'/> */}
 
-          <div className='d-flex justify-content-center mb-4'>
+<form onSubmit={handleSubmit}>
+            <MDBInput
+            label='Name'
+            type='Name'
+            value={userLogin.Name}
+            onChange={(event) => setUserLogin({ ...userLogin, Name: event.target.value })}
+/>
+            <br></br>
+
+            <MDBInput
+             label='Email'
+             type='email'
+             value={userLogin.email}
+             onChange={(event) => setUserLogin({ ...userLogin, email: event.target.value })}
+/>
+            <br></br>
+
+             <MDBInput
+              label='Username'
+              type='text'
+              value={userLogin.username}
+              onChange={(event) => setUserLogin({ ...userLogin, username: event.target.value })}
+   />
+            <br></br>
+
+             <MDBInput
+              label='Password'
+              type='password'
+              value={userLogin.password}
+              onChange={(event) => setUserLogin({ ...userLogin, password: event.target.value })}
+  />
+             <br></br>
+
+             <div className='d-flex justify-content-center mb-4'>
             <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='I have read and agree to the terms' />
           </div>
 
-          <MDBBtn className="mb-4 w-100">Sign up</MDBBtn>
+            <MDBBtn type='submit'>Sign up</MDBBtn>
+                 </form>
+
+
 
         </MDBTabsPane>
 
@@ -177,3 +228,5 @@ function SignUp() {
 }
 
 export default SignUp;
+
+
