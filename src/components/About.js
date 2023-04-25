@@ -23,9 +23,11 @@ function About() {
       </MDBCol>
       <MDBCol className="info-text" md='8'>
       <h2>Who We Are</h2>
-                <p>Welcome to our volunteering website! We are dedicated to connecting individuals with meaningful volunteer opportunities in their communities. Our platform allows users to easily search for and sign up for volunteer opportunities, track their hours, and receive recognition for their contributions.<br/><br/>
-                At our core, we believe that volunteering has the power to transform individuals and communities alike. Through volunteering, people can develop new skills, meet new friends, and make a real difference in the world.<br/><br/>
-                Whether you're interested in helping out at a local nonprofit, volunteering at a community event, or contributing your time and expertise to a cause you care about, our website is here to help. Join our community of volunteers today and start making a difference!
+                <p>Welcome to our volunteering website! We are dedicated to connecting individuals with meaningful volunteer opportunities in their communities. Our platform allows users to easily search for and sign up for volunteer opportunities, track their hours, and receive recognition for their contributions.</p>
+                
+                <p>At our core, we believe that volunteering has the power to transform individuals and communities alike. Through volunteering, people can develop new skills, meet new friends, and make a real difference in the world.</p>
+
+                <p>Whether you're interested in helping out at a local nonprofit, volunteering at a community event, or contributing your time and expertise to a cause you care about, our website is here to help. Join our community of volunteers today and start making a difference!
                 </p>
       </MDBCol>
     </MDBRow>
@@ -33,7 +35,7 @@ function About() {
     <MDBRow className="mission-container">
       <MDBCol className="mission-text" md='8'>
       <h2>Our Mission</h2>
-                <p><br/>
+                <p>
                 Our mission is to empower individuals to make a positive impact in their communities through volunteering. We believe that everyone has the ability to create change and make a difference, and we strive to provide a platform that makes it easy for people to find and engage in volunteer opportunities.
                 </p>
       </MDBCol>
