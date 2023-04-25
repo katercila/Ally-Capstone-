@@ -16,14 +16,11 @@ import { BsHammer } from 'react-icons/bs';
 function About() {
   return (
     <main>
-      <div className="intro">
-        <h1>About Page</h1>
-      </div>
 
       <section className="info-container">
         <div className="info">
             <div className="info-img">
-              <img width="85%" src="https://charlotteunlimited.com/wp-content/uploads/2020/12/volunteer-in-charlotte.png"></img> 
+              <img width="85%" alt="..." src="https://charlotteunlimited.com/wp-content/uploads/2020/12/volunteer-in-charlotte.png"></img> 
             </div>
 
             <div className="info-text">
@@ -56,34 +53,33 @@ function About() {
         <h3> Be the change you wish to see: Volunteer today!</h3>
       </section>
 
-      <section className="org-container">
-        {/* <div className="org-header">
+      <section>
+        <div className="vol-header">
             <h3> Get Involved</h3>
         </div>
-        <div className="orgs">
-          <div className="org-text"> 
-            <img src="" alt="fan-icon"/> 
-            <h4>Renewable fuel and clean energy production</h4>
-          </div>
-        </div> */}
-         <MDBContainer>
-      <MDBRow>
-        <MDBCol size='md'>
-          <BsHammer size={80} />
-          <h3> In-person volunteering</h3>
-          <p> This involves physically showing up at a location and performing tasks such as serving meals at a soup kitchen, cleaning up a park, or tutoring children. </p>
-        </MDBCol>
-        <MDBCol size='md'>
-          <BsHammer size={80} />
-          <h3> Environmental volunteering</h3>
-          <p> This involves volunteering with environmental organizations to protect the environment and promote sustainability, such as cleaning up beaches or planting trees. </p>
-        </MDBCol>
-        <MDBCol size='md'>
-          <BsHammer size={80} />
-          <h3> In-person volunteering</h3>
-          <p> This involves physically showing up at a location and performing tasks such as serving meals at a soup kitchen, cleaning up a park, or tutoring children. </p>
-        </MDBCol>
-      </MDBRow>
+      <MDBContainer className="vol-container">
+        <MDBRow>
+          <MDBCol size='md'>
+          <img width="85%" alt="..." src="/images/about-read-icon.png"></img> 
+            <h3> Help the Youth</h3>
+            <p> Volunteering with kids includes mentoring, tutoring, leading activities, and assisting with homework to support their development and well-being. </p>
+          </MDBCol>
+          <MDBCol size='md'>
+            <img width="85%" alt="..." src="/images/about-dig-icon.png"></img> 
+            <h3> Environmental volunteering</h3>
+            <p> Environmental volunteering supports and protects the natural environment through activities like planting trees, cleaning up litter, restoring wildlife habitats, and educating others about sustainability.  </p>
+          </MDBCol>
+          <MDBCol size='md'>
+           <img width="85%" alt="..." src="/images/about-can-icon.png"></img> 
+            <h3> Community Outreach </h3>
+            <p>Volunteering in the community supports local initiatives, such as food banks, homeless shelters, schools, and community events, to improve well-being.<br/> <br/>  It provides opportunities to meet people, learn new skills, and make a positive impact on others. It plays an essential role in creating a stronger and thriving community. </p>
+          </MDBCol>
+          <MDBCol size='md'>
+           <img width="85%" alt="..." src="/images/about-hands-icon.png"></img> 
+            <h3> And More!</h3>
+            <p> Discover countless ways to make a difference in your community with our diverse range of volunteering opportunities. From environmental conservation to mentoring kids, supporting local charities, and more, our website offers a wide range of opportunities to give back and make a positive impact. <br/> <br/> Browse our listings today and find the perfect volunteer opportunity for you, and more!</p>
+          </MDBCol>
+        </MDBRow>
       </MDBContainer>
       </section>
 
@@ -93,7 +89,7 @@ function About() {
         </div>
       <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
       <MDBCol className='hover-shadow'>
-        <MDBCard>
+        <MDBCard className='h-100'>
           <MDBCardImage
             src='/images/alvaro-admin-pic.jpg'
             alt='...'
@@ -109,9 +105,9 @@ function About() {
         </MDBCard>
       </MDBCol>
       <MDBCol className='hover-shadow'>
-        <MDBCard>
+        <MDBCard className='h-100'>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/042.webp'
+            src='/images/alvaro-admin-pic.jpg'
             alt='...'
             position='top'
           />
@@ -125,9 +121,9 @@ function About() {
         </MDBCard>
       </MDBCol>
       <MDBCol className='hover-shadow'>
-        <MDBCard>
+        <MDBCard className='h-100'>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/043.webp'
+            src='/images/shaye-admin-pic.jpg'
             alt='...'
             position='top'
           />
