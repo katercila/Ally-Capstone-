@@ -1,33 +1,18 @@
-/* NAV BAR */
-nav {
-    width: 60%;
-    margin: 0 auto;
-    padding: 5px;
-    box-shadow: 0px 5px 0px #dedede;
-  }
-  nav ul {
-    list-style: none;
-    text-align: center;
-    height: 20px;
-    font-family: custom,Univers,Helvetica Neue,Helvetica,Arial,sans-serif;
-  }
-  nav ul li {
-    display: inline-block;
-  }
-  nav ul li a {
-    display: block;
-    padding: 2px;
-    text-decoration: none;
-    color: rgb(7, 3, 0);
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0 10px;
-  }
-  nav ul li a,
-  nav ul li a:after,
-  nav ul li a:before {
-    transition: all .5s;
-  }
-  nav ul li a:hover {
-    color: lime;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.nav-items {
+  font-family: 'Poppins', sans-serif !important;
+  color: #50104A !important;
+  font-weight: 600;
+}
+
+.nav-items:hover{
+  color: #94125c !important;
+}
+
+.nav-bars{
+  color: #94125c;
+}
+
+
+
