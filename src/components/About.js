@@ -24,7 +24,7 @@ function About() {
       <MDBCol className="info-text" md='8'>
       <h2>Who We Are</h2>
                 <p>Welcome to our volunteering website! We are dedicated to connecting individuals with meaningful volunteer opportunities in their communities. Our platform allows users to easily search for and sign up for volunteer opportunities, track their hours, and receive recognition for their contributions.</p>
-                
+
                 <p>At our core, we believe that volunteering has the power to transform individuals and communities alike. Through volunteering, people can develop new skills, meet new friends, and make a real difference in the world.</p>
 
                 <p>Whether you're interested in helping out at a local nonprofit, volunteering at a community event, or contributing your time and expertise to a cause you care about, our website is here to help. Join our community of volunteers today and start making a difference!
@@ -129,7 +129,7 @@ function About() {
       <MDBCol className='hover-shadow'>
         <MDBCard className='h-100'>
           <MDBCardImage
-            src='/images/shaye-admin-pic.jpg'
+            src='/images/shaye-admin-pic.png'
             alt='...'
             position='top'
           />
