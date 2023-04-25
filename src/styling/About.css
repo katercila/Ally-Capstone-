@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.info-container{
+    background-color: #50104A;
+    padding-top: 10px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    padding: 50px;
+  }
+  
+  .info-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+  }
+  
+  .info-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+    color:  #fff;
+    padding: 30px;
+  }
+  
+  .info-text h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-weight: 800;
+  }
+  
+  .info-text p {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .mission-container{
+    padding: 20px;
+    justify-items: center;
+    margin: 5%;
+  }
+  .mission-text{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+    padding: 30px;
+    color: #000;
+  }
+
+  .mission-text h2 {
+    color: #50104A;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+.mission-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: stretch;
+}
+  .quote-container h3 {
+    background-image: url('/public/images/about-hands-purplebg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+    margin: 10px;
+    padding: 125px;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+  }
+
+  .vol-header h3{
+    margin-top: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #50104A;
+  }
+  .vol-container{
+    margin-bottom: 2%;
+    text-align: center;
+  }
+
+.vol-container h3{
+  color: #830C4F ;
+  font-weight: 600;
+  
+}
+
+.vol-container p{
+  font-weight: 400;
+  padding-top: 5%;
+ color: black;
+}
+.vol-closer h4{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:  #ffffff;
+  text-align: center;
+  margin-bottom: 10%;
+  background-color:#50104A;
+  border-radius: 20px;
+  padding: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+  .group-members{
+    /* background-color:  #EAC9FF; */
+    margin: 3%;
+    padding: 3%;
+  }
+  .members-title h3{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #50104A;
+  }
+.group-members{
+  text-align: center;
+}
+
+.member-name{
+  color:#830C4F;
+  font-weight: 700 !important;
+}
+
+.member-bio{
+  color: #000 !important;
+}
+  .linkedin-icon{
+    color: #50104A !important;
+  }
+
+
