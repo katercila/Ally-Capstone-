@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import SignUp from "./components/SignUp";
+import NoPage from "./components/NoPage";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
       <Footer />
     </Router> 

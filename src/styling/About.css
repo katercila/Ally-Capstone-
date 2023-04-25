@@ -5,6 +5,7 @@
 }
 .info-container{
     background-color: #50104A;
+    padding-top: 10px;
 }
 
 .info {
@@ -46,8 +47,14 @@
     font-size: 15px;
   }
   
+  .mission-container{
+    padding: 20px;
+    justify-items: center;
+    margin: 5%;
+  }
   .mission-text{
     display: flex;
+    text-align: center;
     align-items: center;
     flex-direction: column;
     align-content: stretch;
@@ -62,7 +69,13 @@
     font-weight: 700;
     margin-bottom: 20px;
   }
-
+.mission-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: stretch;
+}
   .quote-container h3 {
     background-image: url('/public/images/about-hands-purplebg.jpg');
     background-attachment: fixed;
@@ -71,6 +84,7 @@
     margin: 10px;
     padding: 125px;
     font-size: 2rem;
+    font-weight: 800;
     text-align: center;
     color: white;
   }
@@ -84,14 +98,32 @@
     color: #50104A;
   }
   .vol-container{
-    margin-bottom: 10%;
+    margin-bottom: 2%;
     text-align: center;
   }
 
 .vol-container h3{
-  color: #50104A ;
+  color: #830C4F ;
   font-weight: 600;
   
+}
+
+.vol-container p{
+  font-weight: 400;
+  padding-top: 5%;
+ 
+}
+.vol-closer h4{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:  #ffffff;
+  text-align: center;
+  margin-bottom: 10%;
+  background-color:#50104A;
+  border-radius: 20px;
+  padding: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
   .group-members{
     /* background-color:  #EAC9FF; */
@@ -105,6 +137,17 @@
     font-weight: 700;
     margin-bottom: 20px;
     color: #50104A;
+  }
+.group-members{
+  text-align: center;
+}
+
+.member-name{
+  color:#830C4F;
+  font-weight: 700 !important;
+}
+  .linkedin-icon{
+    color: #50104A !important;
   }
 
 
