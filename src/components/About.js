@@ -97,7 +97,7 @@ function About() {
           />
           <MDBCardBody>
             <MDBCardTitle className="member-name">Alvaro</MDBCardTitle>
-            <MDBCardText>
+            <MDBCardText className="member-bio">
               This is a longer card with supporting text below as a natural lead-in to additional content.
               This content is a little bit longer.
             </MDBCardText>
@@ -116,7 +116,7 @@ function About() {
           />
           <MDBCardBody>
           <MDBCardTitle className="member-name">Kat </MDBCardTitle>
-            <MDBCardText>
+          <MDBCardText className="member-bio">
               This is a longer card with supporting text below as a natural lead-in to additional content.
               This content is a little bit longer.
             </MDBCardText>
@@ -135,7 +135,7 @@ function About() {
           />
           <MDBCardBody>
           <MDBCardTitle className="member-name">Shaye </MDBCardTitle>
-            <MDBCardText>
+            <MDBCardText className="member-bio">
               This is a longer card with supporting text below as a natural lead-in to additional content.
               This content is a little bit longer.
             </MDBCardText>
