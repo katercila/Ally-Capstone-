@@ -12,6 +12,7 @@ import {
   MDBIcon,
   MDBCol
 } from 'mdb-react-ui-kit';
+import { Link } from "react-router-dom";
 
 
 function About() {
@@ -80,6 +81,7 @@ function About() {
       </MDBContainer>
       <div className="vol-closer">
         <h4>Browse our listings today and find the perfect volunteer opportunity for you! </h4>
+        <Link to="/" target="_blank"><button>Check Out Events!</button></Link>
       </div>
       </section>
 
