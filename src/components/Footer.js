@@ -20,7 +20,7 @@ export default function Footer() {
             <MDBIcon fab icon='facebook-f' />
           </MDBBtn> */}
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1' href='https://twitter.com/' role='button'>
             <MDBIcon fab icon='twitter' />
           </MDBBtn>
 
@@ -28,7 +28,7 @@ export default function Footer() {
             <MDBIcon fab icon='google' />
           </MDBBtn> */}
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1' href='https://instagram.com/' role='button'>
             <MDBIcon fab icon='instagram' />
           </MDBBtn>
 

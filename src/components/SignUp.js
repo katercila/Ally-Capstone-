@@ -15,28 +15,21 @@ import {
   // MDBCheckbox
 }
 from 'mdb-react-ui-kit';
-
 function SignUp() {
-
   const navigate = useNavigate();
-
   const [userLogin, setUserLogin] = useState({ username: '', password: '' });
   const [justifyActive, setJustifyActive] = useState('tab1');
-
-
-
+  const [setError] = useState(null); // Add error state
   const handleJustifyClick = (value) => {
     if (value === justifyActive) {
       return;
     }
-
     setJustifyActive(value);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
     const { username, password } = userLogin;
     axios.post('http://localhost:3000/login', { email: username, password })
-
 .then((response) => {
   console.log(response.data);
   // Redirect to new page after successful login
@@ -46,17 +39,16 @@ function SignUp() {
     } else if (response.data.role === 'admin') {
       navigate('/admindashboard'); // Redirect to AdminDashboard for admin role
     }
-    // Set the isLoggedIn state to true     
+    // Set the isLoggedIn state to true
   }
 })
 .catch((error) => {
   console.log(error);
+  setError('Wrong username or password'); // Set error message
 });
 };
-
   return (
     <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
-
       <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
         <MDBTabsItem>
           <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
@@ -66,32 +58,24 @@ function SignUp() {
         <MDBTabsItem>
         </MDBTabsItem>
       </MDBTabs>
-
       <MDBTabsContent>
-
         <MDBTabsPane show={justifyActive === 'tab1'}>
-
           <div className="text-center mb-3">
             <p>Sign in with:</p>
-
             <div className='d-flex justify-content-between mx-auto' style={{width: '40%'}}>
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
+              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266F1' }}>
                 <MDBIcon fab icon='facebook-f' size="sm"/>
               </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
+              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266F1' }}>
                 <MDBIcon fab icon='twitter' size="sm"/>
               </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
+              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266F1' }}>
                 <MDBIcon fab icon='google' size="sm"/>
               </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
+              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266F1' }}>
                 <MDBIcon fab icon='github' size="sm"/>
               </MDBBtn>
             </div>
-
             <p className="text-center mt-3">or:</p>
           </div>
           <form onSubmit={handleSubmit}>
@@ -102,7 +86,6 @@ function SignUp() {
               onChange={(event) => setUserLogin({ ...userLogin, username: event.target.value })}
    />
            <br></br>
-
              <MDBInput
               label='Password'
               type='password'
@@ -118,7 +101,5 @@ function SignUp() {
     </MDBContainer>
   );
 }
-
 export default SignUp;
-
 
