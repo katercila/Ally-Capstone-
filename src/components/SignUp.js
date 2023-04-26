@@ -22,7 +22,7 @@ function SignUp() {
 
   const [userLogin, setUserLogin] = useState({ username: '', password: '' });
   const [justifyActive, setJustifyActive] = useState('tab1');
-
+  const [setError] = useState(null); // Add error state
 
 
   const handleJustifyClick = (value) => {
@@ -51,10 +51,12 @@ function SignUp() {
 })
 .catch((error) => {
   console.log(error);
+  setError('Wrong username or password'); // Set error message
 });
 };
 
   return (
+    
     <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
 
       <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>

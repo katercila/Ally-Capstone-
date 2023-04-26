@@ -1,12 +1,14 @@
 import React from "react";
-// import "../styling/Home.css";
-
+import LogoutButton from "./LogoutButton";
+// import { useNavigate } from "react-router-dom";
 
 function AdminDashboard() {
+
   return (
     <main>
       <div className="intro">
-        <h1>Admin dashboard</h1>
+        <h1>Welcome user!</h1>
+        <LogoutButton /> 
       </div>
     </main>
   );
