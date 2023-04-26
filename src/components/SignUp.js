@@ -20,6 +20,7 @@ function SignUp() {
   const [userLogin, setUserLogin] = useState({ username: '', password: '' });
   const [justifyActive, setJustifyActive] = useState('tab1');
   const [setError] = useState(null); // Add error state
+
   const handleJustifyClick = (value) => {
     if (value === justifyActive) {
       return;
@@ -48,6 +49,7 @@ function SignUp() {
 });
 };
   return (
+    
     <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
       <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
         <MDBTabsItem>
