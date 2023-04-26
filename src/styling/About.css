@@ -79,6 +79,7 @@
 }
   .quote-container h3 {
     background-image: url('/public/images/about-hands-purplebg.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(51, 0, 64, 0.52);
     background-attachment: fixed;
     background-size: cover;
     height: 200px;
@@ -179,4 +180,12 @@
     color: #50104A !important;
   }
 
+  @media screen and (min-width: 481px) and (max-width: 768px){
+
+    .quote-container h3 {
+      font-size: 1.5rem;
+      padding: 80px 70px;
+     
+    }
+  }
 

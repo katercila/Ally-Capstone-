@@ -12,35 +12,18 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
-{/* <section className='hero' style={{ height: '100vh' }}>
-  <div className="hero-image">
-    <div className="hero-text">
-      <h1>I am John Doe</h1>
-      <p>And I'm a Photographer</p>
-      <button>Hire me</button>
-    </div>
-  </div>
-</section> */}
+      <div className='hero-container'>
+        <video autoPlay muted loop>
+            <source src="/images/home-donating-vid.mp4" type="video/mp4" />
+        </video>
+            <h1>Together, We Can Change The World</h1>
+            <p> Volunteer and be a part of the solution</p>
+            <Link to="/signup"><button>Sign Up!</button></Link>
+          </div>
 
-
-<div className='hero-container'>
-<video autoPlay muted loop>
-                  <source src="/images/home-donating-vid.mp4" type="video/mp4" />
-              </video>
-      <h1>Together, We Can Change The World</h1>
-      <p> Volunteer and be a part of the solution</p>
-      <Link to="/signup"><button>Sign Up!</button></Link>
-    </div>
-
-
-
-
-
-
-
-
-
-
+        <div className='appreciation-icon'>
+        <img src='/images/home-appreciation.svg'/>
+        </div>  
    
 {/* <MDBRow className="info-container">
       <MDBCol className="info-img" md='4'>

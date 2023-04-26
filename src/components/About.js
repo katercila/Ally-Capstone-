@@ -112,7 +112,7 @@ function About() {
       <MDBCol className='hover-shadow'>
         <MDBCard className='h-100'>
           <MDBCardImage
-            src='/images/alvaro-admin-pic.jpg'
+            src='/images/kat-admin-pic.png'
             alt='...'
             position='top'
           />
