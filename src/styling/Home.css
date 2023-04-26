@@ -57,7 +57,7 @@
     z-index: 10000;
     height: 30%;
     position: absolute;
-    top: 250px;
+    top: 350px;
     right:0;
   }
   
@@ -94,7 +94,7 @@
     margin: 10px;
 }
 
-@media screen and (max-width: 960px) {
+/* @media screen and (max-width: 960px) {
     .hero-container > h1 {
       font-size: 70px;
       margin-top: -150px;
@@ -106,12 +106,13 @@
         height: 25%;
        
       }
-  }
+  } */
   
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 769px) and (max-width: 960px){
     .hero-container > h1 {
       font-size: 50px;
       margin-top: -100px;
+      text-align: center;
     }
   
     .hero-container > p {
@@ -138,6 +139,7 @@
     .hero-container > h1 {
         font-size: 30px;
         margin-top: -100px;
+        text-align: center;
       }
     
       .hero-container > p {
