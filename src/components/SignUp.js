@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "../styling/SignUp.css"
 import {
@@ -11,59 +12,43 @@ import {
   MDBBtn,
   MDBIcon,
   MDBInput,
-  MDBCheckbox
+  // MDBCheckbox
 }
 from 'mdb-react-ui-kit';
-import { dblClick } from '@testing-library/user-event/dist/click';
-
-
 function SignUp() {
-
-  const [user, setUser] = useState({ name: '', username: '', password: '', email: '' });
-  const [userLogin, setUserLogin] = useState("");
-  const [justifyActive, setJustifyActive] = useState('tab2' && 'tab1');;
-
-  function handleLogin(e) {
-    e.preventDefault();
-    console.log("User login:", userLogin);
-  }
-
+  const navigate = useNavigate();
+  const [userLogin, setUserLogin] = useState({ username: '', password: '' });
+  const [justifyActive, setJustifyActive] = useState('tab1');
+  const [setError] = useState(null); // Add error state
   const handleJustifyClick = (value) => {
     if (value === justifyActive) {
       return;
     }
-
     setJustifyActive(value);
   };
-
-  const handleSubmit = async (event, db) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    
-    try {
-      const existingUser = await db.query('SELECT * FROM users WHERE email = ?', [user.email]);
-    
-      if (existingUser.length > 0) {
-        console.log('Email already exists');
-  
-        return;
-      } else {
-        const result = await db.query('INSERT INTO users (username, email, password) VALUES (?,?,?)', [user.username, user.email, user.password]);
-      
-      }
-    
-      const registerResponse = await axios.post('http://localhost:3000/register', user);
-      console.log(registerResponse.data);
-    } catch (error) {
-      console.log(error);
-      // handle the error
+    const { username, password } = userLogin;
+    axios.post('http://localhost:3000/login', { email: username, password })
+.then((response) => {
+  console.log(response.data);
+  // Redirect to new page after successful login
+  if (response.status === 200) {
+    if (response.data.role === 'user') {
+      navigate('/userdashboard'); // Redirect to UserDashboard for user role
+    } else if (response.data.role === 'admin') {
+      navigate('/admindashboard'); // Redirect to AdminDashboard for admin role
     }
-  };
-
-
-
+    // Set the isLoggedIn state to true
+  }
+})
+.catch((error) => {
+  console.log(error);
+  setError('Wrong username or password'); // Set error message
+});
+};
   return (
     <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
-
       <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
         <MDBTabsItem>
           <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
@@ -71,40 +56,28 @@ function SignUp() {
           </MDBTabsLink>
         </MDBTabsItem>
         <MDBTabsItem>
-          <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'}>
-            Register
-          </MDBTabsLink>
         </MDBTabsItem>
       </MDBTabs>
-
       <MDBTabsContent>
-
         <MDBTabsPane show={justifyActive === 'tab1'}>
-
           <div className="text-center mb-3">
             <p>Sign in with:</p>
-
             <div className='d-flex justify-content-between mx-auto' style={{width: '40%'}}>
-              <MDBBtn tag='a' color='none' className='m-1' style={{ Color: 'rgba(0, 0, 0, 0.2)' }} href='https://facebook.com/'>
+              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266F1' }}>
                 <MDBIcon fab icon='facebook-f' size="sm"/>
               </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ Color: 'rgba(0, 0, 0, 0.2)' }} href='https://twitter.com/'>
+              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266F1' }}>
                 <MDBIcon fab icon='twitter' size="sm"/>
               </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ Color: 'rgba(0, 0, 0, 0.2)' }} href='https://google.com/'>
+              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266F1' }}>
                 <MDBIcon fab icon='google' size="sm"/>
               </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ Color: 'rgba(0, 0, 0, 0.2)' }} href='https://github.com/katercila/Ally-Capstone-' >
+              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266F1' }}>
                 <MDBIcon fab icon='github' size="sm"/>
               </MDBBtn>
             </div>
-
             <p className="text-center mt-3">or:</p>
           </div>
-
           <form onSubmit={handleSubmit}>
              <MDBInput
               label='Username'
@@ -113,7 +86,6 @@ function SignUp() {
               onChange={(event) => setUserLogin({ ...userLogin, username: event.target.value })}
    />
            <br></br>
-
              <MDBInput
               label='Password'
               type='password'
@@ -121,104 +93,13 @@ function SignUp() {
               onChange={(event) => setUserLogin({ ...userLogin, password: event.target.value })}
   />
            <br></br>
-
             <MDBBtn type='submit'>Sign in</MDBBtn>
                  </form>
-
-           <br></br>
-
-          <div className="d-flex justify-content-between mx-4 mb-4">
-            <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
-            {/* <a href="!#">Forgot password?</a> */}
-          </div>
-
-
-
-          {/* <p className="text-center">Not a member? <a href="#!">Register</a></p> */}
-
+                 <br></br>
         </MDBTabsPane>
-
-        <MDBTabsPane show={justifyActive === 'tab2'}>
-
-          <div className="text-center mb-3">
-            <p>Sign in with:</p>
-
-            <div className='d-flex justify-content-between mx-auto' style={{width: '40%'}}>
-              <MDBBtn tag='a' color='none' className='m-1' style={{ Color: 'rgba(0, 0, 0, 0.2)' }} href='https://facebook.com/'>
-                <MDBIcon fab icon='facebook-f' size="sm"/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ Color: 'rgba(0, 0, 0, 0.2)' }} href='https://twitter.com/'>
-                <MDBIcon fab icon='twitter' size="sm"/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ Color: 'rgba(0, 0, 0, 0.2)' }} href='https://google.com/'>
-                <MDBIcon fab icon='google' size="sm"/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ Color: 'rgba(0, 0, 0, 0.2)' }} href='https://github.com/katercila/Ally-Capstone-'>
-                <MDBIcon fab icon='github' size="sm"/>
-              </MDBBtn>
-            </div>
-
-            <p className="text-center mt-3">or:</p>
-          </div>
-
-          {/* <MDBInput wrapperClass='mb-4' label='Name' id='form1' type='text'/>
-          <MDBInput wrapperClass='mb-4' label='Username' id='form1' type='text'/>
-          <MDBInput wrapperClass='mb-4' label='Email' id='form1' type='email'/>
-          <MDBInput wrapperClass='mb-4' label='Password' id='form1' type='password'/> */}
-
-<form onSubmit={handleSubmit}>
-            <MDBInput
-            label='Name'
-            type='Name'
-            value={userLogin.Name}
-            onChange={(event) => setUserLogin({ ...userLogin, Name: event.target.value })}
-/>
-            <br></br>
-
-            <MDBInput
-             label='Email'
-             type='email'
-             value={userLogin.email}
-             onChange={(event) => setUserLogin({ ...userLogin, email: event.target.value })}
-/>
-            <br></br>
-
-             <MDBInput
-              label='Username'
-              type='text'
-              value={userLogin.username}
-              onChange={(event) => setUserLogin({ ...userLogin, username: event.target.value })}
-   />
-            <br></br>
-
-             <MDBInput
-              label='Password'
-              type='password'
-              value={userLogin.password}
-              onChange={(event) => setUserLogin({ ...userLogin, password: event.target.value })}
-  />
-             <br></br>
-
-             <div className='d-flex justify-content-center mb-4'>
-  <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='I have read and agree to the terms' required />
-           </div>
-
-            <MDBBtn type='submit'>Sign up</MDBBtn>
-                 </form>
-
-
-
-        </MDBTabsPane>
-
       </MDBTabsContent>
-
     </MDBContainer>
   );
 }
-
 export default SignUp;
-
 
