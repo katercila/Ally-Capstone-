@@ -1,6 +1,6 @@
-# ! influentially. 
+# influentially. - Capstone Project
 
-![Logo]  (/public/images/influentially.-logo.png)
+![Logo](/public/images/influentially.-logo.png)
 
 ## Description
 Welcome to our volunteering platform, where you can easily connect with local organizations in the Charlotte area and find opportunities to give back to the community. Whether you're passionate about the environment, education, social justice, or anything in between, we have a diverse range of volunteering events that cater to all interests and skill sets.
