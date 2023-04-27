@@ -47,7 +47,7 @@ function NavBar() {
             </MDBNavbarItem>
 
             <MDBNavbarItem style={{padding:15, fontSize:18}}> 
-            <Link className="nav-items" to="/signup">Sign Up</Link>
+            <Link className="nav-items" to="/signup">Login</Link>
             </MDBNavbarItem>
             <MDBNavbarItem>
             </MDBNavbarItem>

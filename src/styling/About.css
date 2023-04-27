@@ -79,6 +79,7 @@
 }
   .quote-container h3 {
     background-image: url('/public/images/about-hands-purplebg.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(51, 0, 64, 0.52);
     background-attachment: fixed;
     background-size: cover;
     height: 200px;
@@ -114,11 +115,11 @@
   padding-top: 5%;
  color: black;
 }
-.vol-closer h4{
-  font-size: 1.5rem;
-  font-weight: 700;
-  color:  #ffffff;
-  text-align: center;
+
+.vol-closer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 10%;
   background-color:#50104A;
   border-radius: 20px;
@@ -126,6 +127,30 @@
   margin-left: 5%;
   margin-right: 5%;
 }
+
+.vol-closer h4{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:  #ffffff;
+  text-align: center;
+ 
+}
+
+.vol-closer button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #830C4F;
+  color: white;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.vol-closer button:hover {
+  background-color: white;
+  color: #830C4F;
+}
+
   .group-members{
     /* background-color:  #EAC9FF; */
     margin: 3%;
@@ -151,8 +176,16 @@
 .member-bio{
   color: #000 !important;
 }
-  .linkedin-icon{
+  .linkedin-icon {
     color: #50104A !important;
   }
 
+  @media screen and (min-width: 481px) and (max-width: 768px){
+
+    .quote-container h3 {
+      font-size: 1.5rem;
+      padding: 80px 70px;
+     
+    }
+  }
 
