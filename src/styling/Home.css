@@ -1,17 +1,13 @@
-/* .hero {
-    height: 100vh;
-    margin: 0;
-} */
+
 .hero-container video {
     object-fit: cover;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     position: absolute;
     z-index: -1;
   }
 
   .hero-container {
-    /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
     height: 60vh;
     width: 100%;
     display: flex;
@@ -33,13 +29,11 @@
     margin-top: 8px;
     color: #fff;
     font-size: 2rem;
-    font-weight: 700;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
   }
 
   .hero-container button{
-    padding: 10px;
+    padding: 10px 20px;
     margin-top: 10px;
     border: none;
     background-color: #830C4F;
@@ -53,27 +47,56 @@
     color: #830C4F;
   }
 
-  .appreciation-icon img{
-    z-index: 10000;
-    height: 30%;
+  .hero-container img{
+    z-index: 100;
+    height: 20%;
     position: absolute;
-    top: 350px;
+    top: 70%;
     right:0;
   }
   
-/* .hero-image {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/images/about-hands-purplebg.jpg');
-  
-    height: 60%;
- 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  .motivation-container{
+    /* padding: 20px; */
+    justify-items: center;
+    margin: 5%;
   }
-   */
+  .motivation-text{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+  }
 
-  /* Place text in the middle of the image */
+  .motivation-text h2 {
+    color: #691561;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 4rem;
+    font-weight: 300;
+    padding-bottom: 10px;
+  }
+
+  .motivation-text p {
+    color: rgb(56, 56, 56);
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 90%;
+  }
+
+  .motivation-text span{
+    color: #50104A;
+    font-weight: 600;
+  }
+  
+  .motivation-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: stretch;
+}
+
   .hero-text {
     text-align: center;
     position: absolute;
@@ -83,71 +106,94 @@
     color: white;
   }
 
-
 .topics-container{
     background-color:#830C4F;
     padding: 20px;
+    text-align: center;
+}
+
+.topics-header h3{
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
 }
 
 .topics-row{
-    background-color: white;
-    margin: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #50104A;
+
+  padding-top: 10px;
+  letter-spacing: 1px;
 }
 
-/* @media screen and (max-width: 960px) {
-    .hero-container > h1 {
-      font-size: 70px;
-      margin-top: -150px;
-      text-align: center;
-    }
+.topics-row h3{
+  border: solid #50104A;
+  border-radius: 10px;
+  border-width: 4px;
+  font-weight: 400;
+}
+.topics-row span{
+  color: #4A948D;
+  font-weight: 700;
+  font-style: italic;
+}
 
-    .appreciation-icon img{
-        top: 600px;
-        height: 25%;
-       
-      }
-  } */
+/*--- Responsiveness ---*/
   
-  @media screen and (min-width: 769px) and (max-width: 960px){
-    .hero-container > h1 {
-      font-size: 50px;
+@media screen and (min-width: 960px) and (max-width: 1390px) {
+  .hero-container img{
+    top: 300px;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px){
+  .hero-container > h1 {
+    font-size: 50px;
+    margin-top: -100px;
+    text-align: center;
+  }
+
+  .hero-container > p {
+    font-size: 30px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-container img{
+      height: 20%;
+      top: 550px;
+      right:0;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 768px){
+  .hero-container > h1 {
+      font-size: 30px;
       margin-top: -100px;
       text-align: center;
     }
   
     .hero-container > p {
-      font-size: 30px;
-    }
-  
-    .btn-mobile {
-      display: block;
-      text-decoration: none;
-    }
-  
-    .btn {
-      width: 100%;
+      font-size: 20px;
     }
 
-    .appreciation-icon img{
-        height: 20%;
-        top: 550px;
-        right:0;
-      }
-  }
-
-  @media screen and (min-width: 390px) and (max-width: 768px){
-    .hero-container > h1 {
-        font-size: 30px;
-        margin-top: -100px;
-        text-align: center;
-      }
-    
-      .hero-container > p {
-        font-size: 20px;
-      }
-
-      .appreciation-icon img{
-        height: 20%;
-        top: 450px;
-      }
-  }
+    .hero-container img{
+      height: 20%;
+      top: 550px;
+    }
+}

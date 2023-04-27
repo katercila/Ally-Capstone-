@@ -81,7 +81,7 @@ function About() {
     </MDBContainer>
     <div className="vol-closer">
       <h4>Browse our listings today and find the perfect volunteer opportunity for you! </h4>
-      <Link to="/" target="_blank"><button>Check Out Events!</button></Link>
+      <Link to="/volunteer"><button>Check Out Events!</button></Link>
     </div>
     </section>
 
