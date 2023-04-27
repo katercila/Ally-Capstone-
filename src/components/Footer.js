@@ -11,7 +11,13 @@ import {
   MDBBtn
 } from 'mdb-react-ui-kit';
 
-export default function Footer() {
+function Footer() {
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert('Email address provided will now be subscribed to our newsletter! Thank You!');
+  }
+
   return (
     <MDBFooter className='text-center' color='white' style={{backgroundColor:"rgb(80,16,74)"}}>
       <MDBContainer className='p-4'>
@@ -38,7 +44,7 @@ export default function Footer() {
         </section>
 
         <section className='contact'>
-          <form action=''>
+          <form id='newsletter-form' onSubmit={handleSubmit}>
             <MDBRow className='d-flex justify-content-center'>
               
               <MDBCol size="auto">
@@ -84,11 +90,10 @@ export default function Footer() {
       </MDBContainer>
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-      © 2023 Copyright:
-        <a className='text-white' href='https://mdbootstrap.com/'>
-        &ensp;influentially.
-        </a>
+      © 2023 influentially.
       </div>
     </MDBFooter>
   );
 }
+
+export default Footer;
