@@ -37,9 +37,10 @@ export default function Footer() {
           </MDBBtn>
         </section>
 
-        <section className=''>
+        <section className='contact'>
           <form action=''>
             <MDBRow className='d-flex justify-content-center'>
+              
               <MDBCol size="auto">
                 <p className='pt-2'>
                   <strong>Sign up for our newsletter</strong>
@@ -55,14 +56,30 @@ export default function Footer() {
                   Subscribe
                 </MDBBtn>
               </MDBCol>
+
+              <section className='mb-4'>
+              <p>
+              Join the movement of giving back: Volunteer with us today!
+              </p>
+              </section>
+
+              <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
+              <p>
+                <MDBIcon icon="home" className="me-2" />
+                  Red Ventures Dr,<br/>Indian Land, North Carolina, 29707
+              </p>
+              <p>
+                <MDBIcon icon="envelope" className="me-3" />
+                help@influentially.com
+              </p>
+              <p>
+                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+              </p>
+            
+            </MDBCol>
             </MDBRow>
           </form>
-        </section>
-
-        <section className='mb-4'>
-          <p>
-          Join the movement of giving back: Volunteer with us today!
-          </p>
         </section>
       </MDBContainer>
 
