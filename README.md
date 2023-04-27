@@ -1,4 +1,6 @@
-# ![influentially.] (/public/images/influentially.-logo.png) influentially. 
+# influentially. - Capstone Project
+
+![Logo](/public/images/influentially.-logo.png)
 
 ## Description
 Welcome to our volunteering platform, where you can easily connect with local organizations in the Charlotte area and find opportunities to give back to the community. Whether you're passionate about the environment, education, social justice, or anything in between, we have a diverse range of volunteering events that cater to all interests and skill sets.
@@ -14,7 +16,7 @@ To get you started with our application you will need to follow the instructions
 
 If you followed these instructions it should take you to a page that looks something like the image below:
 
-![Home page of our application](/public/images/readmeSample1.png)
+![Home page of our application](/public/images/HomeScreen.png)
 
 ## Usage
 The influentially. application is very user friendly and easy to use. All you have to do to see our application work is to sign in using the sign in page. From there, you'll be able to choose any volunteering event you want to sign up to. It'll give you a message saying that you have successfully signed up for the event you chose. 
