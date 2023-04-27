@@ -14,7 +14,7 @@ function Volunteer () {
   return ( 
     <div>
     <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1913&q=80" alt="My Image"  style={{ width: '100vw', height: '55vh', marginBottom: '2rem' }}/>
-    <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem' }} >Volunteer Events</h1>
+    <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem', color: '#830C4F' }} >Volunteer Events</h1>
     <div className="card-grid">
     <MDBCard className='card'>
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
