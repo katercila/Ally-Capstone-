@@ -22,17 +22,10 @@ function Footer() {
     <MDBFooter className='text-center' color='white' style={{backgroundColor:"rgb(80,16,74)"}}>
       <MDBContainer className='p-4'>
         <section className='mb-4'>
-          {/* <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='facebook-f' />
-          </MDBBtn> */}
 
           <MDBBtn outline color="light" floating className='m-1' href='https://twitter.com/' role='button'>
             <MDBIcon fab icon='twitter' />
           </MDBBtn>
-
-          {/* <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='google' />
-          </MDBBtn> */}
 
           <MDBBtn outline color="light" floating className='m-1' href='https://instagram.com/' role='button'>
             <MDBIcon fab icon='instagram' />
@@ -46,6 +39,7 @@ function Footer() {
         <section className=''>
           <form id='newsletter-form' onSubmit={handleSubmit}>
             <MDBRow className='d-flex justify-content-center'>
+              
               <MDBCol size="auto">
                 <p className='pt-2'>
                   <strong>Sign up for our newsletter</strong>
@@ -61,14 +55,30 @@ function Footer() {
                   Subscribe
                 </MDBBtn>
               </MDBCol>
+
+              <section className='mb-4'>
+              <p>
+              Join the movement of giving back: Volunteer with us today!
+              </p>
+              </section>
+
+              
+              <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4' style={{width: '50%', letterspacing:'1px'}}>
+              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
+              <p>
+                <MDBIcon icon="home" className="me-2" />
+                  Red Ventures Dr, Indian Land, North Carolina, 29707
+              </p>
+              <p>
+                <MDBIcon icon="envelope" className="me-3" />
+                help@influentially.com
+              </p>
+              {/* <p>
+                <MDBIcon icon="phone" className="me-3" /> + 01 704 000 000
+              </p> */}
+            </MDBCol>
             </MDBRow>
           </form>
-        </section>
-
-        <section className='mb-4'>
-          <p>
-          Join the movement of giving back: Volunteer with us today!
-          </p>
         </section>
       </MDBContainer>
 

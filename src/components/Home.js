@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <section className='hero-container'>
         <video autoPlay muted loop>
-            <source src="/images/home-donating-vid.mp4" type="video/mp4" />
+            <source src="/images/home-donating-vid.mp4" type="video/mp4" alt="Volunteers packing goods"/>
         </video>
             <h1>Together, We Can Change The World</h1>
             <p> Volunteer And Be A Part Of The Solution</p>
@@ -23,40 +23,36 @@ export default function Home() {
       <section className='motivation-container'>
       <MDBRow>
       <MDBCol className="motivation-img" md='4'>
-        <img width="150%" src='/images/home-icon1.png'/>
+        <img width="100%" src='/images/home-icon1.png' alt="Child's hand panted"/>
         </MDBCol>
         <MDBCol className="motivation-text" md='8'>
         <h2> More People.</h2>
           <h2> More Impact.</h2>
-            <p> <span> influntially. </span> is a platform that connects individuals with meaningful volunteer opportunities in their communities. We work with a wide range of nonprofit organizations, community groups, and causes to provide users with a variety of options for giving back. </p>   
+            <p><span> influntially. </span> is a platform that connects individuals with meaningful volunteer opportunities in their communities. We work with a wide range of nonprofit organizations, community groups, and causes to provide users with a variety of options for giving back. </p>   
         </MDBCol>
       </MDBRow>
       </section>
 
-      <section className="topics-container">
+      <section className="topics-container animated">
           <div className="topics-header">
-                <h3> Join Us In Three Steps!</h3>
+                <h3> Join Us In <span>Three </span>Steps!</h3>
             </div>
           <MDBContainer>
               <MDBRow >
-                <MDBCol className='topics-row' size='md'>
-                <h3><span> 1.</span>  SEARCH </h3>
-                <img width="85%" alt="..." src="/images/home-icon7.png"></img> 
-                  <p> </p>
+                <MDBCol className='topics-row hover-effect' size='sm'>
+                <h3><span> 1</span>  SEARCH </h3>
+                <Link to="/volunteer"><img width="85%" alt="Computer mock-up of volunteer page" src="/images/home-icon2.png"></img></Link>
                 </MDBCol>
 
-                <MDBCol className='topics-row' size='md'>
-                <h3><span> 2.</span> SIGN UP or LOG IN</h3>
-                <Link to="/volunteer"><img width="85%" alt="..." src="/images/home-icon2.png"></img></Link>  
-                  <p> </p>
+                <MDBCol className='topics-row hover-effect' size='sm'>
+                <h3><span> 2</span> LOG IN</h3>
+                <Link to="/signup"><img width="85%" alt="Hands raised" src="/images/home-icon5.png"></img></Link>  
                 </MDBCol>
 
-                <MDBCol className='topics-row' size='md'>
-                <h3><span> 3.</span>  VOLUNTEER! </h3>
-                <img width="85%" alt="..." src="/images/home-icon6.png"></img> 
-                  <p> </p>
+                <MDBCol className='topics-row hover-effect' size='sm'>
+                <h3><span> 3</span>  VOLUNTEER! </h3>
+                <img width="85%" alt="Drawing of two volunteers picking up trash " src="/images/home-icon6.png"></img> 
                 </MDBCol>
-
               </MDBRow>
             </MDBContainer>
       </section>
@@ -71,7 +67,7 @@ export default function Home() {
             </p>    
           </MDBCol>
           <MDBCol className="motivation-img" md='4'>
-            <img width="150%" src='/images/home-icon3.png'/>
+            <img width="100%" src='/images/home-icon3.png' alt="A group of volunteers picking up trash in a field."/>
           </MDBCol>
         </MDBRow>
       </section>
