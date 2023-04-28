@@ -16,60 +16,62 @@
     padding: 50px;
   }
   
-  .info-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    align-content: stretch;
-  }
-  
-  .info-text {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-content: stretch;
-    color:  #fff;
-    padding: 30px;
-  }
-  
-  .info-text h2 {
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-weight: 800;
-  }
-  
-  .info-text p {
-    text-align: center;
-    font-size: 15px;
-  }
-  
-  .mission-container{
-    padding: 20px;
-    justify-items: center;
-    margin: 5%;
-  }
-  .mission-text{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    align-content: stretch;
-    padding: 30px;
-    color: #000;
-  }
+.info-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: stretch;
+}
 
-  .mission-text h2 {
-    color: #50104A;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
+.info-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: stretch;
+  color:  #fff;
+  padding: 30px;
+}
+
+.info-text h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.info-text p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.mission-container{
+  padding: 20px;
+  justify-items: center;
+  margin: 5%;
+}
+
+.mission-text{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: stretch;
+  padding: 30px;
+  color: #000;
+}
+
+.mission-text h2 {
+  color: #50104A;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 .mission-video{
   display: flex;
   justify-content: center;
@@ -77,32 +79,33 @@
   flex-direction: column;
   align-content: stretch;
 }
-  .quote-container h3 {
-    background-image: url('/public/images/about-hands-purplebg.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(51, 0, 64, 0.52);
-    background-attachment: fixed;
-    background-size: cover;
-    height: 200px;
-    margin: 10px;
-    padding: 125px;
-    font-size: 2rem;
-    font-weight: 800;
-    text-align: center;
-    color: white;
-  }
 
-  .vol-header h3{
-    margin-top: 60px;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 4rem;
-    font-weight: 500;
-    color: #50104A;
-  }
-  .vol-container{
-    margin-bottom: 2%;
-    text-align: center;
-  }
+.quote-container h3 {
+  background-image: url('/public/images/about-hands-purplebg.jpg');
+  box-shadow: inset 0 0 0 1000px rgba(51, 0, 64, 0.52);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 200px;
+  margin: 10px;
+  padding: 125px;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+}
+
+.vol-header h3{
+  margin-top: 60px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #50104A;
+}
+.vol-container{
+  margin-bottom: 2%;
+  text-align: center;
+}
 
 .vol-container h3{
   color: #830C4F ;
@@ -151,23 +154,24 @@
   color: #830C4F;
 }
 
-  .group-members{
-    margin: 3%;
-    padding: 3%;
-  }
+.group-members{
+  margin: 3%;
+  padding: 3%;
+}
 
-  .hover-shadow:hover{
-    /* background-color: rgba(57, 2, 65, 0.29); */
-    box-shadow: 10px 10px 5px rgba(58, 2, 54, 0.234);
-  }
-  .members-title h3{
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #50104A;
-  }
+.hover-shadow:hover{
+  
+  box-shadow: 10px 10px 5px rgba(58, 2, 54, 0.234);
+}
+
+.members-title h3{
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #50104A;
+}
 .group-members{
   text-align: center;
 }
@@ -180,7 +184,8 @@
 .member-bio{
   color: #000 !important;
 }
-  .linkedin-icon {
+
+.linkedin-icon {
     color: #50104A !important;
   }
 
