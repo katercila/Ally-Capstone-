@@ -48,7 +48,7 @@ function About() {
     </MDBRow>
 
     <section class="quote-container">
-      <h3> Be the change you wish to see: Volunteer today!</h3>
+      <h3> Be the change you wish to see: Volunteer Today!</h3>
     </section>
 
     <section>
@@ -64,7 +64,7 @@ function About() {
         </MDBCol>
         <MDBCol size='md'>
           <img width="85%" alt="..." src="/images/about-dig-icon.png"></img> 
-          <h3> Environmental volunteering</h3>
+          <h3> Environmental Volunteering</h3>
             <p> Environmental volunteering supports and protects the natural environment through activities like planting trees, cleaning up litter, restoring wildlife habitats, and educating others about sustainability.  </p>
         </MDBCol>
         <MDBCol size='md'>
@@ -75,13 +75,13 @@ function About() {
         <MDBCol size='md'>
           <img width="85%" alt="..." src="/images/about-hands-icon.png"></img> 
           <h3> And More!</h3>
-            <p> Discover countless ways to make a difference in your community with our diverse range of volunteering opportunities. From environmental conservation to mentoring kids, supporting local charities, and more, our website offers a wide range of opportunities to give back and make a positive impact.</p>
+            <p> Discover countless ways to make a difference in the Charlotte community with our diverse range of volunteering opportunities. From environmental conservation to mentoring kids, supporting local charities, and more, our website offers a wide range of opportunities to give back and make a positive impact.</p>
         </MDBCol>
       </MDBRow>
     </MDBContainer>
     <div className="vol-closer">
       <h4>Browse our listings today and find the perfect volunteer opportunity for you! </h4>
-      <Link to="/volunteer"><button>Check Out Events!</button></Link>
+      <Link target="_parent" to="/volunteer"><button>Check Out Events!</button></Link>
     </div>
     </section>
 
@@ -90,7 +90,7 @@ function About() {
           <h3> Meet The Team</h3>
       </div>
     <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
-    <MDBCol className='hover-shadow'>
+    <MDBCol style={{ borderRadius: "20px" }}className='hover-shadow'>
       <MDBCard className='h-100'>
         <MDBCardImage
           src='/images/alvaro-admin-pic.jpg'
@@ -100,8 +100,7 @@ function About() {
         <MDBCardBody>
           <MDBCardTitle className="member-name">Alvaro</MDBCardTitle>
           <MDBCardText className="member-bio">
-            This is a longer card with supporting text below as a natural lead-in to additional content.
-            This content is a little bit longer.
+          " The benefits of volunteering are immeasurable. It helps support and strengthen communities, promotes equality, and builds connections between people of different backgrounds." - Alvaro
           </MDBCardText>
           <MDBBtn outline color="secondary" floating className='linkedin-icon' href='https://www.linkedin.com/in/arodriguez-salas/' target="_blank" role='button'>
           <MDBIcon fab icon='linkedin-in' />
@@ -110,7 +109,7 @@ function About() {
       </MDBCard>
     </MDBCol>
     
-    <MDBCol className='hover-shadow'>
+    <MDBCol style={{ borderRadius: "20px" }}className='hover-shadow'>
       <MDBCard className='h-100'>
         <MDBCardImage
           src='/images/kat-admin-pic.png'
@@ -120,8 +119,7 @@ function About() {
         <MDBCardBody>
         <MDBCardTitle className="member-name">Kat </MDBCardTitle>
         <MDBCardText className="member-bio">
-            This is a longer card with supporting text below as a natural lead-in to additional content.
-            This content is a little bit longer.
+        "Volunteering plays a crucial role in community development by bringing people together and fostering a sense of collaboration and unity. Additionally, volunteering promotes diversity by creating opportunities for individuals from different backgrounds."
           </MDBCardText>
           <MDBBtn outline color="secondary" floating className='linkedin-icon' href='https://www.linkedin.com/in/katerinercila/' target="_blank" role='button'>
           <MDBIcon fab icon='linkedin-in' />
@@ -130,7 +128,7 @@ function About() {
       </MDBCard>
     </MDBCol>
     
-    <MDBCol className='hover-shadow'>
+    <MDBCol style={{ borderRadius: "20px" }}className='hover-shadow'>
       <MDBCard className='h-100'>
         <MDBCardImage
           src='/images/shaye-admin-pic.png'
@@ -140,8 +138,7 @@ function About() {
         <MDBCardBody>
         <MDBCardTitle className="member-name">Shaye </MDBCardTitle>
           <MDBCardText className="member-bio">
-            This is a longer card with supporting text below as a natural lead-in to additional content.
-            This content is a little bit longer.
+          "Volunteering is important to me because it allows me to give back to my community and support causes that I am passionate about to be able to make a positive impact on the lives of others." - Shaye
           </MDBCardText>
           <MDBBtn outline color="secondary" floating className='linkedin-icon' href='https://www.linkedin.com/in/shayeellerbe/' target="_blank" role='button'>
           <MDBIcon fab icon='linkedin-in' />

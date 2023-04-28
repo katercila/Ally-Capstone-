@@ -92,11 +92,11 @@
   }
 
   .vol-header h3{
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
     letter-spacing: 1px;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight: 500;
     color: #50104A;
   }
   .vol-container{
@@ -152,9 +152,13 @@
 }
 
   .group-members{
-    /* background-color:  #EAC9FF; */
     margin: 3%;
     padding: 3%;
+  }
+
+  .hover-shadow:hover{
+    /* background-color: rgba(57, 2, 65, 0.29); */
+    box-shadow: 10px 10px 5px rgba(58, 2, 54, 0.234);
   }
   .members-title h3{
     text-align: center;
@@ -180,12 +184,20 @@
     color: #50104A !important;
   }
 
-  @media screen and (min-width: 481px) and (max-width: 768px){
-
+  /*--- Responsiveness ---*/
+  
+  @media (max-width: 767px) {
     .quote-container h3 {
+      padding: 50px;
       font-size: 1.5rem;
-      padding: 80px 70px;
-     
     }
   }
 
+  @media (min-width: 768px) and (max-width: 991px) {
+    .quote-container h3 {
+      padding: 100px;
+      font-size: 1.8rem;
+    }
+  }
+  
+  
