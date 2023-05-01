@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <section className='hero-container'>
-        <video autoPlay muted webkit-playsinline playsinline loop>
+        <video autoPlay muted playsInline loop>
             <source src="/images/home-donating-vid.mp4" type="video/mp4" alt="Volunteers packing goods"/>
         </video>
             <h1>Together, We Can Change The World</h1>
