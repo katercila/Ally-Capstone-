@@ -1,0 +1,31 @@
+.user-table {
+  border-collapse: collapse;
+  width: 95%;
+  margin: 10% auto 30%;
+}
+
+  
+  .user-table__header {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-table__data {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-table__data:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .logout-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  
+  

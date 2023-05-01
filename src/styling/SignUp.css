@@ -1,0 +1,15 @@
+
+  .MDBBtn[type="submit"] {
+    display: block;
+    margin: 0 auto;
+  }
+  .login-button{
+    
+    margin-top: 20%;
+    margin-left: 25%;
+    width: 50%;
+  }
+  .submit-button{
+    /* background-color: aqua; */
+    margin-left: 41%;
+  }
