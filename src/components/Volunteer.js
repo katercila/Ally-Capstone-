@@ -14,7 +14,7 @@ function Volunteer () {
   return ( 
     <div>
     <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1913&q=80" alt="My Image"  style={{ width: '100vw', height: '55vh', marginBottom: '2rem' }}/>
-    <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem' }} >Volunteer Events</h1>
+    <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem', color: '#830C4F' }} >Volunteer Events</h1>
     <div className="card-grid">
     <MDBCard className='card'>
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
@@ -28,7 +28,7 @@ function Volunteer () {
         <MDBCardText className='card-text'>
         Please join The Independence Fund and our partners as we provide food and cleaning supplies and personal hygiene items to veterans.
         </MDBCardText>
-        <MDBBtn href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Sign Up</MDBBtn> 
+        <MDBBtn className='signup-btn' href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Sign Up</MDBBtn> 
       </MDBCardBody>
       </MDBCard>
 
@@ -44,7 +44,7 @@ function Volunteer () {
         <MDBCardText className='card-text'>
         Are you interested in learning more about PFLAG Charlotte and our volunteer opportunities?
         </MDBCardText>
-        <MDBBtn href='/SignUp'style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
+        <MDBBtn className='signup-btn' href='/SignUp'style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
       </MDBCardBody>
       </MDBCard>
 
@@ -60,7 +60,7 @@ function Volunteer () {
         <MDBCardText className='card-text'>
         RSVP now for the May South End Rail Trail Clean Up on Saturday, May 20th from 10am-1pm! ALL clean up supplies will be provided by Keep Charlotte Beautiful.
         </MDBCardText>
-        <MDBBtn href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
+        <MDBBtn className='signup-btn' href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
       </MDBCardBody>
       </MDBCard>
 
@@ -76,7 +76,7 @@ function Volunteer () {
         <MDBCardText className='card-text'>
         Volunteers will join Lakeview residents to clean out undergrowth, old benches, and other areas around the Lakeview Neighborhood E-Hub
         </MDBCardText>
-        <MDBBtn href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
+        <MDBBtn className='signup-btn' href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
       </MDBCardBody>
       </MDBCard>
 
@@ -92,7 +92,7 @@ function Volunteer () {
         <MDBCardText className='card-text'>
         Volunteers will create and spruce up gathering spaces around the campus of this neighborhood school
         </MDBCardText>
-        <MDBBtn href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
+        <MDBBtn className='signup-btn' href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
       </MDBCardBody>
       </MDBCard>
 
@@ -108,7 +108,7 @@ function Volunteer () {
         <MDBCardText className='card-text'>
         Volunteers will span out throughout the Grier Heights neighborhood to assist with beautification projects.
         </MDBCardText>
-        <MDBBtn href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
+        <MDBBtn className='signup-btn' href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
       </MDBCardBody>
       </MDBCard>
 
@@ -124,7 +124,7 @@ function Volunteer () {
         <MDBCardText className='card-text'>
         Come Join Us! We Are Serving Our Community by Giving Blessing Bags to the Charlotte community! 
         </MDBCardText>
-        <MDBBtn href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
+        <MDBBtn className='signup-btn' href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
       </MDBCardBody>
       </MDBCard>
 
@@ -140,7 +140,7 @@ function Volunteer () {
         <MDBCardText className='card-text'>
         Work with Camp Greene neighbors in their community garden and assist with a neighborhood cleanup.
         </MDBCardText>
-        <MDBBtn href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
+        <MDBBtn className='signup-btn' href='/SignUp' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >Sign Up</MDBBtn>
       </MDBCardBody>
     </MDBCard>
     </div>
