@@ -41,7 +41,7 @@ function About() {
           </p>
       </MDBCol>
       <MDBCol className="mission-video" md='4'>
-        <video id="slider" width= "85%" autoPlay muted loop webkit-playsinline playsinline>
+        <video id="slider" width= "85%" autoPlay muted loop playsInline >
           <source src="/images/about-helpingman.mp4" type="video/mp4" />
         </video>
       </MDBCol>
