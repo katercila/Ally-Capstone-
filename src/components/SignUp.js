@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "../styling/SignUp.css"
+
 import {
   MDBContainer,
   MDBTabs,
@@ -52,11 +53,15 @@ function SignUp() {
     
     <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
       <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
+      <div className='login-button'>
         <MDBTabsItem>
+          {/* <div className='login-button'> */}
           <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
             Login
           </MDBTabsLink>
+          {/* </div> */}
         </MDBTabsItem>
+        </div>
         <MDBTabsItem>
         </MDBTabsItem>
       </MDBTabs>
@@ -95,7 +100,8 @@ function SignUp() {
               onChange={(event) => setUserLogin({ ...userLogin, password: event.target.value })}
   />
            <br></br>
-            <MDBBtn type='submit'>Sign in</MDBBtn>
+           <div className='submit-button'>
+            <MDBBtn type='submit'>Sign in</MDBBtn></div>
                  </form>
                  <br></br>
         </MDBTabsPane>

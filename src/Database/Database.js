@@ -49,8 +49,29 @@ app.post('/login', (req, res) => {
       }
     }
   });
+  // testing event table 
+  // app.get('/events', (req, res) => {
+  //   connection.query('SELECT * FROM event', (err, rows) => {
+  //     if (err) throw err;
+  //     res.json(rows);
+  //   });
+  // });
   
   
+});
+//admin dashboard
+
+app.get('/api/capstone', (req, res) => {
+  const getUsers = `SELECT email, first_name, last_name, city, state, password, role FROM users`;
+
+  connection.query(getUsers, (err, result) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send('Internal server error!');
+    } else {
+      res.status(200).json(result);
+    }
+  });
 });
 
 // start the server
