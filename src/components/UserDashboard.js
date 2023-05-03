@@ -25,7 +25,6 @@ function AdminDashboard() {
             <th scope='col'>Location</th>
             <th scope='col'>Date</th>
             <th scope='col'>Time</th>
-            {/* <th scope='col'>Hours</th> */}
           </tr>
         </MDBTableHead>
         <MDBTableBody>

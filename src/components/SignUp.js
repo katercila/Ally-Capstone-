@@ -15,6 +15,7 @@ import {
   MDBInput,
   // MDBCheckbox
 }
+
 from 'mdb-react-ui-kit';
 function SignUp() {
   const navigate = useNavigate();
@@ -41,9 +42,9 @@ function SignUp() {
     } else if (response.data.role === 'admin') {
       navigate('/admindashboard'); // Redirect to AdminDashboard for admin role
     }
-    // Set the isLoggedIn state to true
   }
 })
+
 .catch((error) => {
   console.log(error);
   setError('Wrong username or password'); // Set error message
@@ -55,11 +56,9 @@ function SignUp() {
       <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
       <div className='login-button'>
         <MDBTabsItem>
-          {/* <div className='login-button'> */}
           <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
             Login
           </MDBTabsLink>
-          {/* </div> */}
         </MDBTabsItem>
         </div>
         <MDBTabsItem>

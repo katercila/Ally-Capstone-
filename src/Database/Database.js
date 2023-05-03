@@ -49,15 +49,7 @@ app.post('/login', (req, res) => {
       }
     }
   });
-  // testing event table 
-  // app.get('/events', (req, res) => {
-  //   connection.query('SELECT * FROM event', (err, rows) => {
-  //     if (err) throw err;
-  //     res.json(rows);
-  //   });
-  // });
-  
-  
+
 });
 //admin dashboard
 
